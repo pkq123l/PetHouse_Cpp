@@ -1,0 +1,19 @@
+需求分析：
+动物猫（CCat）、狗（CDog）、蛇（CSnake），包含名字（m_strName）、颜色（m_strColor）、年龄（m_nAge）。
+笼子类（CCage）：它负责装3种动物，每个笼子编号不能相同。
+房子类（CHouse）：负责存放装动物的笼子。
+人（CPeople）：负责花钱买动物，造笼子，将动物放到笼子中，存放到房子里，杀死某个笼子动物，销毁某个笼子（如果有动物一并销毁），
+查看某个或所有笼子动物，和某个动物玩耍。
+
+
+控制台程序，通过输入命令，可以进行简单的人机交互。
+
+提示：获取输入字符可以用 string::getline(cin, cmd); //获取输入的命令（阻塞等待）
+#include<string>
+basic_istream<_Elem, _Traits>& getline(
+		basic_istream<_Elem, _Traits>&           _Istr,
+		basic_string<_Elem, _Traits, _Alloc>&    _Str,
+		const _Elem                              _Delim)
+_Istr ：表示一个输入流，譬如cin.
+_Str  ：将输入流读取的字符串放到_Str 中。
+_Delim：遇到这个字符就停止读取，不设置默认为'\n'
